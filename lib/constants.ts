@@ -166,5 +166,3 @@ export const CLERK_AUTH_APPEARANCE_OVERRIDE = {
     formFieldLabel: 'text-[#212a3b] font-medium text-lg',
     footerActionLink: 'text-[#212a3b] hover:text-[#3d485e] text-base font-medium',
 };
-
-

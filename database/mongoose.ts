@@ -12,7 +12,7 @@ declare global {
 }
 
 let cached = global.mongooseCache || (global.mongooseCache = { conn: null, promise: null });
-
+    console.log("URI:", MONGODB_URI);
 export const connectToDatabase = async () => {
     if (cached.conn) return cached.conn;
 
