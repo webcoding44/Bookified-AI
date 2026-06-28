@@ -1,21 +1,19 @@
-````markdown
-# 📚 Bookified – AI Voice Book Companion
+# 📚 Bookified AI
 
 <div align="center">
 
-![Bookified Banner](/public/assets/images/banner.png)
+![Banner](book.png)
 
-![Next.js](https://img.shields.io/badge/Next.js-FullStack-black?style=for-the-badge&logo=next.js)
-![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge&logo=mongodb)
-![Vapi AI](https://img.shields.io/badge/Vapi-Voice_AI-blue?style=for-the-badge)
-![ElevenLabs](https://img.shields.io/badge/ElevenLabs-Voice_Synthesis-8B5CF6?style=for-the-badge)
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Vapi](https://img.shields.io/badge/Vapi-Voice_AI-blue?style=for-the-badge)
+![ElevenLabs](https://img.shields.io/badge/ElevenLabs-AI_Voices-purple?style=for-the-badge)
 ![Clerk](https://img.shields.io/badge/Clerk-Authentication-orange?style=for-the-badge)
-![Shadcn UI](https://img.shields.io/badge/Shadcn-UI-black?style=for-the-badge)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38BDF8?style=for-the-badge&logo=tailwind-css)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-Styling-06B6D4?style=for-the-badge&logo=tailwindcss)
 
-### 🎙️ Talk with Your Books Using AI Voice Conversations
+### 🎙️ Voice-First AI Platform for Conversational Learning
 
-An AI-powered platform that transforms PDFs into interactive companions, enabling natural voice conversations, intelligent summaries, and personalized reading experiences.
+Upload PDF books, chat with them using AI voice, generate summaries, and transform reading into an interactive learning experience.
 
 </div>
 
@@ -23,107 +21,105 @@ An AI-powered platform that transforms PDFs into interactive companions, enablin
 
 # 📖 Overview
 
-**Bookified** is a modern **AI-powered SaaS platform** that redefines the reading experience through conversational AI.
+**Bookified AI** is a modern AI-powered platform that transforms traditional PDF books into intelligent conversational companions.
 
-Instead of passively reading documents, users can upload PDF books and engage in **real-time voice conversations** powered by **Vapi** and **ElevenLabs**. The platform intelligently processes each document using vector embeddings and Retrieval-Augmented Generation (RAG), allowing users to ask questions, request summaries, and explore complex topics naturally.
+Instead of simply reading static content, users can upload books, ask questions through natural voice conversations, generate AI-powered summaries, and interact with personalized voice assistants.
 
-Built with **Next.js 16**, **MongoDB**, **Clerk**, **Tailwind CSS**, and **shadcn/ui**, Bookified delivers a fast, scalable, and production-ready reading experience.
+Built with **Next.js 16**, **Vapi**, **ElevenLabs**, **MongoDB**, **Clerk**, **Tailwind CSS**, and **shadcn/ui**, the platform demonstrates the integration of conversational AI, voice synthesis, and intelligent document retrieval into a scalable full-stack application.
 
 ---
 
-# ✨ Key Features
+# ✨ Core Features
 
-## 📄 AI-Powered PDF Processing
+## 📄 Intelligent PDF Processing
 
-Upload books and let AI prepare them for intelligent conversations.
+Transform PDFs into searchable AI knowledge bases.
 
-- PDF upload & storage
+### Features
+
+- Upload PDF books
 - Automatic text extraction
-- Smart document chunking
-- High-dimensional vector embeddings
-- Semantic context retrieval (RAG)
+- Intelligent document chunking
+- Context-aware embeddings
+- Fast semantic retrieval
 
 ---
 
 ## 🎙️ Real-Time Voice Conversations
 
-Interact naturally with your books.
+Have natural conversations with your books.
 
-- Real-time AI voice conversations
-- Ask questions verbally
-- Discuss chapters and concepts
-- Low-latency voice interaction
-- Powered by **Vapi AI**
+### Features
+
+- Voice-first interactions
+- Ask questions naturally
+- AI-generated spoken responses
+- Low-latency conversations powered by Vapi
 
 ---
 
-## 🗣️ AI Voice Personas
+## 🧠 AI Voice Personas
 
-Choose the perfect AI companion for your reading sessions.
+Choose your preferred AI reading companion.
+
+### Features
 
 - Multiple AI personalities
 - High-quality voice synthesis
 - Instant voice previews
-- Human-like conversations
-- Powered by **ElevenLabs**
+- Powered by ElevenLabs
 
 ---
 
-## 🧠 Smart Summaries & Insights
+## 📖 Smart Summaries & Insights
 
 Understand books faster.
 
+### Features
+
 - Chapter summaries
 - Topic explanations
-- Deep-dive insights
-- Key takeaways
-- Context-aware responses
+- Key concept extraction
+- AI-generated insights
 
 ---
 
-## 📝 Session Transcripts
+## 📝 Live Session Transcripts
 
 Keep every conversation.
 
-- Automatic transcript generation
+### Features
+
+- Automatic transcripts
+- Session history
 - Search previous conversations
-- Save important insights
-- Review learning history
+- Learning review
 
 ---
 
-## 📚 Library Management
+## 📚 Personal Library
 
-Organize your growing AI library.
+Manage your AI-powered collection.
 
-- Personal book collection
-- Browse global library
-- Powerful search interface
-- Fast document discovery
+### Features
+
+- Organize uploaded books
+- Search your library
+- Browse global collections
+- Fast content discovery
 
 ---
 
-## 🔐 Authentication & Subscription
+## 🔐 Authentication & Subscriptions
 
 Secure and scalable user management.
 
-- Clerk Authentication
-- Email & Social Login
-- Protected Routes
-- Subscription Plans
-- Premium Features
+### Features
 
----
-
-## 📱 Modern Responsive UI
-
-Beautiful experience across every device.
-
-- Mobile-first design
-- Tailwind CSS
-- shadcn/ui components
-- Smooth animations
-- Accessible interface
+- Email & Social Authentication
+- Protected routes
+- Subscription plans
+- Premium feature support
 
 ---
 
@@ -137,19 +133,23 @@ Beautiful experience across every device.
 - Tailwind CSS
 - shadcn/ui
 
-## 🗄️ Backend & Database
+---
+
+## 🗄️ Backend
 
 - MongoDB
-- Mongoose
-- Next.js Server Actions
+- Server Actions
+- API Routes
 
-## 🤖 AI & Voice
+---
 
-- OpenAI
+## 🎙️ AI & Voice
+
 - Vapi AI
 - ElevenLabs
-- Vector Embeddings
 - Retrieval-Augmented Generation (RAG)
+
+---
 
 ## 🔐 Authentication
 
@@ -159,16 +159,17 @@ Beautiful experience across every device.
 
 # 🚀 Getting Started
 
-## 1️⃣ Clone repository
+## 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/bookified.git
-cd bookified
+git clone https://github.com/yourusername/bookified-ai.git
+
+cd bookified-ai
 ```
 
 ---
 
-## 2️⃣ Install dependencies
+## 2️⃣ Install Dependencies
 
 ```bash
 npm install
@@ -176,120 +177,135 @@ npm install
 
 ---
 
-## 3️⃣ Setup environment variables
+## 3️⃣ Configure Environment Variables
+
+Create a `.env.local` file:
 
 ```env
-# Clerk
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
+NODE_ENV='development'
+NEXT_PUBLIC_BASE_URL=localhost:3000
 
-# MongoDB
+# CLERK
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/
+NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL=/
+
+
+# VERCEL BLOB
+bookifiedai_STORE_ID=
+bookifiedai_READ_WRITE_TOKEN=
+
+# MONGODB
 MONGODB_URI=
 
-# OpenAI
-OPENAI_API_KEY=
+# VAPI
+NEXT_PUBLIC_VAPI_API_KEY=
+VAPI_SERVER_SECRET=
 
-# Vapi
-VAPI_API_KEY=
+# Google Gemini API for embeddings
+GOOGLE_GEMINI_API_KEY=
 
-# ElevenLabs
+# ELEVENLABS
 ELEVENLABS_API_KEY=
 ```
 
 ---
 
-## 4️⃣ Run development server
+## 4️⃣ Start Development Server
 
 ```bash
 npm run dev
 ```
 
----
+Open:
 
-# 🏗️ System Architecture
-
-```text
-                User
-                  │
-                  ▼
-      Next.js 16 Frontend (App Router)
-                  │
-                  ▼
-      Server Actions / API Routes
-                  │
-      ┌───────────┴───────────┐
-      ▼                       ▼
- MongoDB                 Clerk Auth
-      │
-      ▼
-PDF Processing Pipeline
-      │
-      ▼
-Text Extraction
-      │
-      ▼
-Chunking & Embeddings
-      │
-      ▼
-Retrieval-Augmented Generation (RAG)
-      │
-      ▼
- OpenAI + Vapi + ElevenLabs
-      │
-      ▼
-Real-Time Voice Conversation
+```
+http://localhost:3000
 ```
 
 ---
 
-# 🌟 Highlights
+# 🔄 System Architecture
 
-✔ AI Voice Conversations with Books  
-✔ Intelligent PDF Processing  
-✔ Retrieval-Augmented Generation (RAG)  
-✔ High-Quality AI Voice Personas  
-✔ Live Conversation Transcripts  
-✔ Semantic Book Search  
-✔ Clerk Authentication  
-✔ Subscription-Ready Architecture  
-✔ Modern UI with Tailwind & shadcn/ui  
-✔ Production-Ready Next.js 16 Application
+```text
+             User
+               │
+               ▼
+     Next.js Frontend (UI)
+               │
+               ▼
+     Clerk Authentication
+               │
+               ▼
+       PDF Upload & Processing
+               │
+               ▼
+   Embeddings & Context Retrieval
+               │
+               ▼
+         MongoDB Storage
+               │
+               ▼
+      AI Response Generation
+               │
+      ┌────────┴────────┐
+      ▼                 ▼
+   Vapi AI        ElevenLabs
+ (Conversation) (Voice Synthesis)
+      │                 │
+      └────────┬────────┘
+               ▼
+     Real-Time Voice Response
+```
+
+---
+
+# 🌟 Key Highlights
+
+- 🎙️ Real-time AI voice conversations
+- 📚 Intelligent PDF understanding
+- 🧠 AI-generated summaries & insights
+- 🎭 Multiple AI voice personas
+- 📝 Automatic conversation transcripts
+- 📂 Smart library management
+- 🔐 Secure authentication with Clerk
+- 💳 Subscription-ready architecture
+- ⚡ Modern UI with shadcn/ui & Tailwind CSS
+- 🚀 Scalable full-stack architecture
 
 ---
 
 # 💡 What This Project Demonstrates
 
-This project showcases skills in:
+This project showcases expertise in:
 
-- Full-stack SaaS Development
-- Conversational AI Systems
-- Voice AI Integration
-- Retrieval-Augmented Generation (RAG)
-- PDF Processing Pipelines
-- Vector Embedding Search
-- Modern Authentication
-- MongoDB Data Modeling
-- Responsive UI Development
-- Production-Ready Next.js Architecture
+- AI-powered web applications
+- Voice AI integration
+- Full-stack Next.js development
+- RAG (Retrieval-Augmented Generation)
+- MongoDB data modeling
+- Authentication & user management
+- Modern UI/UX development
+- Scalable SaaS architecture
 
 ---
 
 # 🚀 Future Improvements
 
-- EPUB & DOCX support
-- AI-generated flashcards
-- Reading progress tracking
-- AI reading recommendations
-- Multi-language conversations
-- Collaborative reading sessions
-- Mobile application
-- Offline AI synchronization
+- 🌍 Multi-language voice support
+- 📱 Mobile application
+- 🤝 Collaborative reading sessions
+- 📒 AI-generated study notes
+- 📈 Learning analytics dashboard
+- 🎯 Personalized book recommendations
 
 ---
 
 # ❤️ Final Note
 
-**Bookified** transforms static books into intelligent AI companions by combining **voice conversations**, **semantic search**, and **modern AI technologies** into a seamless reading experience.
+Bookified AI transforms traditional reading into an interactive AI-powered learning experience. By combining conversational AI, intelligent document retrieval, and natural voice synthesis, it enables users to learn through engaging, real-time conversations with their books.
 
 ---
 
@@ -297,7 +313,6 @@ This project showcases skills in:
 
 ## 📚 The Future of Reading is Conversational
 
-Built with **Next.js 16 • MongoDB • OpenAI • Vapi • ElevenLabs • Clerk** 🚀
+**Next.js • Vapi • ElevenLabs • MongoDB • Clerk 🚀**
 
 </div>
-````
