@@ -57,9 +57,9 @@
   --bg-card: #ffffff;
 
   /* Warm Text Colors */
-  --text-primary: #212a3b;
+  --text-primary: gray;
   --text-secondary: #3d485e;
-  --text-muted: #222c37;
+  --text-muted: #ffffff;
 
   /* Warm Accent */
   --accent-warm: #212a3b;
@@ -92,7 +92,7 @@
   --primary-foreground: #ffffff;
   --secondary: #f3e4c7;
   --secondary-foreground: #212a3b;
-  --muted: #f3e4c7;
+  --muted: #ffffff;
   --muted-foreground: #3d485e;
   --accent: #fff6e5;
   --accent-foreground: #212a3b;
@@ -132,7 +132,7 @@
   --card-foreground: #f7f4ee;
   --popover: #252321;
   --popover-foreground: #f7f4ee;
-  --primary: #f7f4ee;
+  --primary: gray;
   --primary-foreground: #1a1918;
   --secondary: #2d2a26;
   --secondary-foreground: #f7f4ee;
@@ -508,13 +508,9 @@
     @apply hidden lg:flex items-center justify-center flex-1 max-w-[400px];
   }
   .library-cta-primary {
-    @apply inline-flex items-center justify-center gap-2 bg-[#a10e0e] text-[var(--text-primary)] px-5 py-3 rounded-[10px] font-bold text-base md:text-xl transition-all w-full lg:w-fit;
+    @apply inline-flex items-center justify-center gap-2 bg-[#333333] text-[var(--text-primary)] px-5 py-3 rounded-[10px] font-bold text-base md:text-xl transition-all w-full lg:w-fit;
     font-family: 'IBM Plex Serif', serif;
-
-    &:hover {
-      @apply bg-gray-50;
-      box-shadow: var(--shadow-soft);
-    }
+    box-shadow: var(--shadow-soft);
   }
   .library-cta-secondary {
     @apply inline-flex items-center gap-2 bg-[#333333] text-[var(--text-primary)] px-5 py-3 rounded-[10px] font-bold text-xl transition-all;
