@@ -6,18 +6,18 @@ import {MAX_FILE_SIZE} from "@/lib/constants";
 export async function POST(request: Request): Promise<NextResponse> {
     try {
         const body = (await request.json()) as HandleUploadBody;
-
         const jsonResponse = await handleUpload({
-            token: process.env.bookified_READ_WRITE_TOKEN,
+            token: process.env.bookifiedai_READ_WRITE_TOKEN,
             body,
             request,
             onBeforeGenerateToken: async () => {
                 const { userId } = await auth();
-
+                
                 if(!userId) {
                     throw new Error('Unauthorized: User not authenticated');
                 }
-
+                console.log("TOKEN:", process.env.bookifiedai_READ_WRITE_TOKEN)
+                
                 return {
                     allowedContentTypes: ['application/pdf', 'image/jpeg', 'image/png', 'image/webp'],
                     addRandomSuffix: true,
