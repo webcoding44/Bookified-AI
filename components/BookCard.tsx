@@ -1,6 +1,6 @@
 import Link from "next/link";
 import {BookCardProps} from "@/types";
-import Image from "next/image";
+// import Image from "next/image";
 
 const BookCard = ({ title, author, coverURL, slug }: BookCardProps) => {
     return (
@@ -8,7 +8,7 @@ const BookCard = ({ title, author, coverURL, slug }: BookCardProps) => {
             <article className="book-card">
                 <figure className="book-card-figure">
                     <div className="book-card-cover-wrapper">
-                        <Image src={coverURL} alt={title} width={133} height={200} className="book-card-cover" />
+                        <img src={coverURL} alt={title} className="book-card-cover"  style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                     </div>
 
                     <figcaption className="book-card-meta">

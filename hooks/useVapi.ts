@@ -254,23 +254,25 @@ export function useVapi(book: IBook) {
 
             const firstMessage = `Hey, good to meet you. Quick question before we dive in - have you actually read ${book.title} yet, or are we starting fresh?`;
 
-            await getVapi().start(ASSISTANT_ID, {
-                firstMessage,
-                variableValues: {
-                    title: book.title,
-                    author: book.author,
-                    bookId: book._id,
-                },
-                voice: {
-                    provider: '11labs' as const,
-                    voiceId: getVoice(voice).id,
-                    model: 'eleven_turbo_v2_5' as const,
-                    stability: VOICE_SETTINGS.stability,
-                    similarityBoost: VOICE_SETTINGS.similarityBoost,
-                    style: VOICE_SETTINGS.style,
-                    useSpeakerBoost: VOICE_SETTINGS.useSpeakerBoost,
-                },
-            });
+console.log('🎙️ Starting call with assistant:', '1aa3bb05-e36b-428a-a724-be3ff1c7f158');
+
+await getVapi().start('1aa3bb05-e36b-428a-a724-be3ff1c7f158', {
+    firstMessage,
+    variableValues: {
+        title: book.title,
+        author: book.author,
+        bookId: book._id,
+    },
+    voice: {
+        provider: '11labs' as const,
+        voiceId: getVoice(voice).id,
+        model: 'eleven_turbo_v2_5' as const,
+        stability: VOICE_SETTINGS.stability,
+        similarityBoost: VOICE_SETTINGS.similarityBoost,
+        style: VOICE_SETTINGS.style,
+        useSpeakerBoost: VOICE_SETTINGS.useSpeakerBoost,
+    },
+});
         } catch (err) {
             console.error('Failed to start call:', err);
             setStatus('idle');

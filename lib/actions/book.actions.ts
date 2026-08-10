@@ -31,10 +31,10 @@ export const getAllBooks = async (search?: string) => {
     };
   } catch (e) {
     console.error('Error connecting to database', e);
-    return {
-      success: false,
-      error: e,
-    };
+return {
+  success: false,
+  error: e instanceof Error ? e.message : String(e),
+};
   }
 };
 
@@ -58,10 +58,10 @@ export const checkBookExists = async (title: string) => {
     };
   } catch (e) {
     console.error('Error checking book exists', e);
-    return {
-      exists: false,
-      error: e,
-    };
+return {
+  success: false,
+  error: e instanceof Error ? e.message : String(e),
+};
   }
 };
 
@@ -69,8 +69,7 @@ export const createBook = async (data: CreateBook) => {
   try {
     await connectToDatabase();
 
-    const slug = generateSlug(data.title);
-
+const slug = generateSlug(data.title) || 'book-' + Date.now().toString(36);
     const existingBook = await Book.findOne({ slug }).lean();
 
     if (existingBook) {
@@ -113,10 +112,10 @@ export const createBook = async (data: CreateBook) => {
   } catch (e) {
     console.error('Error creating a book', e);
 
-    return {
-      success: false,
-      error: e,
-    };
+return {
+  success: false,
+  error: e instanceof Error ? e.message : String(e),
+};
   }
 };
 
@@ -136,10 +135,10 @@ export const getBookBySlug = async (slug: string) => {
     };
   } catch (e) {
     console.error('Error fetching book by slug', e);
-    return {
-      success: false,
-      error: e,
-    };
+return {
+  success: false,
+  error: e instanceof Error ? e.message : String(e),
+};
   }
 };
 
@@ -177,10 +176,10 @@ export const saveBookSegments = async (
   } catch (e) {
     console.error('Error saving book segments', e);
 
-    return {
-      success: false,
-      error: e,
-    };
+return {
+  success: false,
+  error: e instanceof Error ? e.message : String(e),
+};
   }
 };
 
@@ -241,5 +240,35 @@ export const searchBookSegments = async (
       error: (error as Error).message,
       data: [],
     };
+  }
+};
+
+export const deleteBook = async (bookId: string) => {
+  try {
+    await connectToDatabase();
+
+    const { auth } = await import('@clerk/nextjs/server');
+    const { userId } = await auth();
+    if (!userId) return { success: false, error: 'Unauthorized' };
+
+    const book = await Book.findById(bookId);
+    if (!book) return { success: false, error: 'Book not found' };
+    if (book.clerkId !== userId) return { success: false, error: 'This is not your book' };
+
+    await BookSegment.deleteMany({ bookId: book._id });
+    await Book.deleteOne({ _id: book._id });
+
+    // حذف فایل‌ها از Blob (اختیاری ولی تمیز)
+    try {
+      const { del } = await import('@vercel/blob');
+      if (book.fileBlobKey) await del(book.fileBlobKey);
+      if (book.coverBlobKey) await del(book.coverBlobKey);
+    } catch (e) {
+      console.error('Blob cleanup failed:', e);
+    }
+
+    return { success: true };
+  } catch (e) {
+    return { success: false, error: e instanceof Error ? e.message : String(e) };
   }
 };

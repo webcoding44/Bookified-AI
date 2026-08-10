@@ -384,10 +384,10 @@
      VAPI CONTROLS COMPONENT
      =========================================== */
   .vapi-header-card {
-    @apply flex items-center gap-6 bg-[#f3e4c7] rounded-[14px] p-6 relative overflow-hidden;
+    @apply flex items-center gap-6 bg-[#333] rounded-[14px] p-6 relative overflow-hidden;
   }
   .vapi-compact-header {
-    @apply flex items-center gap-2 bg-[#f3e4c7] rounded-[14px] p-3 mb-3;
+    @apply flex items-center gap-2 bg-[#333] rounded-[14px] p-3 mb-3;
   }
   .vapi-transcript-wrapper {
     @apply min-h-[400px] max-h-[60vh] flex flex-col;
@@ -425,7 +425,7 @@
     }
   }
   .vapi-mic-btn-active {
-    @apply bg-[#212a3b];
+    @apply bg-[#fff];
   }
   .vapi-mic-btn-inactive {
     @apply bg-white;
@@ -737,7 +737,7 @@
   border: none !important;
   box-shadow: var(--shadow-soft) !important;
   border-radius: 0.75rem !important;
-  background-color: #212a3b !important;
+  background-color: #fff !important;
   color: white !important;
 }
 
@@ -777,7 +777,7 @@
 }
 
 .cl-formFieldInput:focus {
-  border-color: #212a3b !important;
+  border-color: #fff !important;
   box-shadow: var(--shadow-soft), 0 0 0 2px rgba(33, 42, 59, 0.1) !important;
 }
 
@@ -876,7 +876,7 @@ button[data-variant='unstyled'] *,
 .cl-tabButton *,
 [role='tablist'] button,
 [role='tablist'] button * {
-  color: #212a3b !important;
+  color: #fff !important;
 }
 
 /* Card sections have white background */
