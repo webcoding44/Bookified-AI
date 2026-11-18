@@ -50,7 +50,7 @@ const HeroSection = () => {
 
           {/* Right Part */}
           <div className='library-steps-card min-w-[260px] max-w-[280px] z-10 shadow-soft-md'>
-            <ul className='space-y-6'>
+            <ul className='library-steps-list space-y-6'>
               <li className='library-step-item'>
                 <div className='w-10 h-10 min-w-10 min-h-10 rounded-full border border-[var(--border-subtle)] bg-[var(--accent-light)] text-[var(--text-primary)] flex items-center justify-center font-medium text-lg'>
                   1

@@ -39,6 +39,7 @@ const Search = () => {
             <Input
                 type="text"
                 placeholder="Search books by title or author"
+                aria-label="Search books by title or author"
                 className="library-search-input border-none shadow-none focus-visible:ring-0"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}

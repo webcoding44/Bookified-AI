@@ -18,7 +18,7 @@ export default function SubscriptionsPage() {
         </p>
       </div>
 
-      <section className='mx-auto w-full max-w-6xl rounded-[32px] border border-[var(--border-subtle)] bg-[var(--accent-light)] p-6 shadow-soft-lg'>
+      <section className='clerk-pricing-table-wrapper mx-auto w-full max-w-6xl rounded-[32px] border border-[var(--border-subtle)] bg-[var(--accent-light)] p-6 shadow-soft-lg'>
         <PricingTable />
       </section>
     </main>

@@ -23,8 +23,8 @@ const Navbar = () => {
   const { user } = useUser();
 
   return (
-    <header className='w-full fixed z-50 bg-[var(--background)]'>
-      <div className='wrapper navbar-height py-4 flex justify-between items-center'>
+    <header className='site-header w-full fixed z-50'>
+      <div className='wrapper site-header-inner navbar-height py-4 flex justify-between items-center'>
         <Link
           href='/'
           className='flex gap-0.5 items-center'
@@ -40,7 +40,7 @@ const Navbar = () => {
           </span>
         </Link>
 
-        <nav className='w-fit flex gap-7.5 items-center'>
+        <nav aria-label='Main navigation' className='site-nav w-fit flex gap-7.5 items-center'>
           {navItems.map(({ label, href }) => {
             const isActive =
               pathName === href || (href !== '/' && pathName.startsWith(href));

@@ -22,7 +22,7 @@ export function useLatestRef<T>(value: T) {
     return ref;
 }
 
-const VAPI_API_KEY = process.env.NEXT_PUBLIC_VAPI_API_KEY;
+const VAPI_API_KEY = process.env.NEXT_PRAVIT_VAPI_API_KEY;
 const TIMER_INTERVAL_MS = 1000;
 const SECONDS_PER_MINUTE = 60;
 const TIME_WARNING_THRESHOLD = 60; // Show warning when this many seconds remain
@@ -31,7 +31,7 @@ let vapi: InstanceType<typeof Vapi>;
 function getVapi() {
     if (!vapi) {
         if (!VAPI_API_KEY) {
-            throw new Error('NEXT_PUBLIC_VAPI_API_KEY environment variable is not set');
+            throw new Error('NEXT_PRAVIT_VAPI_API_KEY environment variable is not set');
         }
         vapi = new Vapi(VAPI_API_KEY);
     }
